@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RSpec.describe Scrabble::Scoring do
+RSpec.xdescribe Scrabble::Scoring do
   subject { described_class.new(dictionary) }
 
   let(:dictionary) do

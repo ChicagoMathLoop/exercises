@@ -3,8 +3,7 @@
 module Scrabble
   module ScoreDictionary
     def self.build_from_legacy(filename)
-      Reformatter.new(FileReader.new(filename))
-                 .reformat
+      # your code here
     end
   end
 end

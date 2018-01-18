@@ -9,7 +9,7 @@ module Scrabble
     end
 
     def score_letter(letter)
-      dictionary.fetch(letter, 0)
+      # your code here
     end
   end
 end
