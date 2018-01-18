@@ -1,7 +1,11 @@
 # frozen_string_literal: true
 
-RSpec.describe Scrabble::Legacy::Scoring do
-  subject { described_class.new(default_example_file) }
+RSpec.describe Scrabble::Scoring do
+  subject { described_class.new(dictionary) }
+
+  let(:dictionary) do
+    Scrabble::ScoreDictionary.build_from_legacy(default_example_file)
+  end
 
   describe '#score_letter' do
     context 'in English' do
